@@ -1,4 +1,4 @@
-
+import UIKit
 extension Note {
     static func parse(json: [String: Any]) -> Note? {
         print("Parsing")

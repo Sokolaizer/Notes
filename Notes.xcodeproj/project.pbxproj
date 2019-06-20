@@ -12,6 +12,8 @@
 		5DF2278722BBC38300D91C20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF2278522BBC38300D91C20 /* Main.storyboard */; };
 		5DF2278922BBC38500D91C20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DF2278822BBC38500D91C20 /* Assets.xcassets */; };
 		5DF2278C22BBC38500D91C20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF2278A22BBC38500D91C20 /* LaunchScreen.storyboard */; };
+		5DF2279422BBC3AD00D91C20 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF2279322BBC3AD00D91C20 /* Note.swift */; };
+		5DF2279622BBC41900D91C20 /* NoteExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF2279522BBC41900D91C20 /* NoteExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		5DF2278822BBC38500D91C20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DF2278B22BBC38500D91C20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5DF2278D22BBC38500D91C20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DF2279322BBC3AD00D91C20 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		5DF2279522BBC41900D91C20 /* NoteExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		5DF2278022BBC38300D91C20 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
+				5DF2279322BBC3AD00D91C20 /* Note.swift */,
+				5DF2279522BBC41900D91C20 /* NoteExtensions.swift */,
 				5DF2278122BBC38300D91C20 /* AppDelegate.swift */,
 				5DF2278322BBC38300D91C20 /* ViewController.swift */,
 				5DF2278522BBC38300D91C20 /* Main.storyboard */,
@@ -136,7 +142,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DF2278422BBC38300D91C20 /* ViewController.swift in Sources */,
+				5DF2279622BBC41900D91C20 /* NoteExtensions.swift in Sources */,
 				5DF2278222BBC38300D91C20 /* AppDelegate.swift in Sources */,
+				5DF2279422BBC3AD00D91C20 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		307749F522C1636100E57E6E /* FileNotebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307749F422C1636100E57E6E /* FileNotebook.swift */; };
 		5DF2278222BBC38300D91C20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF2278122BBC38300D91C20 /* AppDelegate.swift */; };
 		5DF2278422BBC38300D91C20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF2278322BBC38300D91C20 /* ViewController.swift */; };
 		5DF2278722BBC38300D91C20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF2278522BBC38300D91C20 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		307749F422C1636100E57E6E /* FileNotebook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FileNotebook.swift; path = ../FileNotebook.swift; sourceTree = "<group>"; };
 		5DF2277E22BBC38300D91C20 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DF2278122BBC38300D91C20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DF2278322BBC38300D91C20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,8 +26,8 @@
 		5DF2278822BBC38500D91C20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DF2278B22BBC38500D91C20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5DF2278D22BBC38500D91C20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5DF2279322BBC3AD00D91C20 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
-		5DF2279522BBC41900D91C20 /* NoteExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteExtensions.swift; sourceTree = "<group>"; };
+		5DF2279322BBC3AD00D91C20 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Note.swift; path = ../Note.swift; sourceTree = "<group>"; };
+		5DF2279522BBC41900D91C20 /* NoteExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NoteExtensions.swift; path = ../NoteExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +41,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		307749F622C3D78400E57E6E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5DF2279322BBC3AD00D91C20 /* Note.swift */,
+				5DF2279522BBC41900D91C20 /* NoteExtensions.swift */,
+				307749F422C1636100E57E6E /* FileNotebook.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		5DF2277522BBC38200D91C20 = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +70,7 @@
 		5DF2278022BBC38300D91C20 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
-				5DF2279322BBC3AD00D91C20 /* Note.swift */,
-				5DF2279522BBC41900D91C20 /* NoteExtensions.swift */,
+				307749F622C3D78400E57E6E /* Model */,
 				5DF2278122BBC38300D91C20 /* AppDelegate.swift */,
 				5DF2278322BBC38300D91C20 /* ViewController.swift */,
 				5DF2278522BBC38300D91C20 /* Main.storyboard */,
@@ -102,6 +113,7 @@
 				TargetAttributes = {
 					5DF2277D22BBC38300D91C20 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -141,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				307749F522C1636100E57E6E /* FileNotebook.swift in Sources */,
 				5DF2278422BBC38300D91C20 /* ViewController.swift in Sources */,
 				5DF2279622BBC41900D91C20 /* NoteExtensions.swift in Sources */,
 				5DF2278222BBC38300D91C20 /* AppDelegate.swift in Sources */,
@@ -299,7 +312,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.swiftcourses.Notes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -317,7 +330,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.swiftcourses.Notes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
